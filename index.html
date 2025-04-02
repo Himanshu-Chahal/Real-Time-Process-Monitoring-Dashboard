@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time System Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js for graphs -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>📊 Real-Time System Monitor</h1>
+
+        <div class="metrics">
+            <div class="card">
+                <h3>CPU Usage</h3>
+                <p id="cpu">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Memory Usage</h3>
+                <p id="memory">Loading...</p>
+            </div>
+        </div>
+
+        <h2>📈 CPU Usage Over Time</h2>
+        <div class="box">
+            <canvas id="cpuChart"></canvas>
+        </div>
+        <!-- Real-time graph -->
+
+        <h2>📝 Top 5 Processes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>PID</th>
+                    <th>Process Name</th>
+                    <th>CPU (%)</th>
+                </tr>
+            </thead>
+            <tbody id="process-list">
+                <tr>
+                    <td colspan="3">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
